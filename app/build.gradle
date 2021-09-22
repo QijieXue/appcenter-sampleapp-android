@@ -11,7 +11,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         // Obtain the value of APPCENTER_APP_SECRET environment variable from Build time.
-        buildConfigField("String", "APPCENTER_APP_SECRET", "\"\"")
+        buildConfigField("String", "APPCENTER_APP_SECRET", "\"5ef0d082-550d-4017-823f-f3ed2444b22c\"")
         if (System.getenv("APPCENTER_APP_SECRET") != null) {
             buildConfigField("String", "APPCENTER_APP_SECRET", "\"${System.getenv("APPCENTER_APP_SECRET")}\"")
         }
